@@ -1,0 +1,36 @@
+{
+    "success":"1",
+    "total":"100",
+    "result":[
+        {
+            "userHead":"http://img1.imgtn.bdimg.com/it/u=1450185990,1189087573&fm=21&gp=0.jpg",
+            "favour":"1000",
+            "userLink":"http://www.baidu.com",
+            "userName":"haoge",
+            "userAction":"赞了",
+            "userTime":"19小时前",
+            "articleLink":"http://www.google.com.hk",
+            "articleTitle":"我的文章1"
+        },
+        {
+            "userHead":"http://img1.imgtn.bdimg.com/it/u=1450185990,1189087573&fm=21&gp=0.jpg",
+            "favour":"100",
+            "userLink":"http://www.baidu.com",
+            "userName":"hongtang",
+            "userAction":"赞了",
+            "userTime":"19小时前",
+            "articleLink":"http://www.google.com.hk",
+            "articleTitle":"关于react的使用教程"
+        },
+        {
+            "userHead":"http://img1.imgtn.bdimg.com/it/u=1450185990,1189087573&fm=21&gp=0.jpg",
+            "favour":"200",
+            "userLink":"http://www.baidu.com",
+            "userName":"zhonghua",
+            "userAction":"赞了",
+            "userTime":"19小时前",
+            "articleLink":"http://www.google.com.hk",
+            "articleTitle":"我的文章1"
+        }
+    ]
+}
