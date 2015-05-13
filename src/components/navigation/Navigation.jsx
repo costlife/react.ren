@@ -5,16 +5,16 @@ define(function(require){
             return {
                 navs:[{
                     name:'首页',
-                    href:'/index'
+                    href:'#/'
                 },{
                     name:'推荐',
-                    href:'/suggest'
+                    href:'#/suggest'
                 },{
                     name:'话题',
-                    href:'/topic'
+                    href:'#/topic'
                 },{
                     name:'消息',
-                    href:'/msg'
+                    href:'#/msg'
                 }]
             }
         },

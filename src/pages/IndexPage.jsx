@@ -6,7 +6,7 @@ define(function(require){
     return (
         <div>
             <Header />
-            <ArticleList source="/test/list.json"/>
+            <ArticleList source="/test/index.json"/>
             <LoginForm/>
         </div>
     );

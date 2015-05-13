@@ -1,3 +1,5 @@
+@import "/static/css/mixins";
+
 .login-form {
     background-color: #4190ff;
     display: inline-block;
@@ -24,10 +26,7 @@
             cursor: text;
         }
         input[type=text], input[type=password] {
-            border: none;
-            background: none;
-            outline-style: none;
-            -webkit-appearance: none;
+            .inputWithoutBorder;
         }
     }
     .login-btn {
@@ -36,6 +35,7 @@
         cursor: pointer;
         background-color: #85beff;
         color: #fff;
+        .btn-blue;
     }
     .login-btn:active {
         box-shadow: 5px;

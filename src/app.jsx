@@ -1,20 +1,27 @@
 define(function(require){
   var React = require('react');
+  var page_index = require("pages/IndexPage");
+  var page_suggest = require("pages/SuggestPage");
 
-  function App() {
+  routie({
+    '': function(){
+      View(page_index);
+    },
+    '/suggest': function(){
+      View(page_suggest);
+    },
+    '*': function(){
+      routie('');
+    }
+  });
 
-    var LoginPage = require("pages/LoginPage");
+  function View(page) {
     this.AppView = React.createClass({
       render: function () {
-        return LoginPage;
+        return page;
       }
     });
+    React.render(<this.AppView />, document.getElementById('content'));
   }
-
-  App.prototype.init = function () {
-    React.render(<this.AppView />, document.body);
-  };
-
-  return App;
 
 });
