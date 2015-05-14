@@ -1,27 +1,23 @@
 define(function(require){
   var React = require('react');
-  var page_index = require("pages/IndexPage");
-  var page_suggest = require("pages/SuggestPage");
+  var IndexPage = require("pages/IndexPage");
+  var SuggestPage = require("pages/SuggestPage");
 
   routie({
-    '': function(){
-      View(page_index);
+    'index': function(){
+      View(<IndexPage />);
     },
-    '/suggest': function(){
-      View(page_suggest);
+    'suggest': function(){
+      View(<SuggestPage />);
     },
     '*': function(){
-      routie('');
-    }
+      routie('index');
+    },
+
   });
 
   function View(page) {
-    this.AppView = React.createClass({
-      render: function () {
-        return page;
-      }
-    });
-    React.render(<this.AppView />, document.getElementById('content'));
+    React.render(page, document.getElementById('appview'));
   }
 
 });

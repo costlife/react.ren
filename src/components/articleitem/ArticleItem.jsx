@@ -24,4 +24,4 @@ define(function(require){
         }
     });
     return ArticleItem;
-})
+});

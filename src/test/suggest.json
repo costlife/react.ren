@@ -3,6 +3,7 @@
     "total":"100",
     "result":[
         {
+            "id": "4",
             "userHead":"http://www.qqzhi.com/uploadpic/2014-09-16/034534127.jpg",
             "favour":"1000",
             "userLink":"http://www.baidu.com",
@@ -13,6 +14,7 @@
             "articleTitle":"我的文章1"
         },
         {
+            "id": "5",
             "userHead":"http://www.qqzhi.com/uploadpic/2014-09-16/034534127.jpg",
             "favour":"100",
             "userLink":"http://www.baidu.com",
@@ -23,6 +25,7 @@
             "articleTitle":"关于react的使用教程"
         },
         {
+            "id": "6",
             "userHead":"http://www.qqzhi.com/uploadpic/2014-09-16/034534127.jpg",
             "favour":"200",
             "userLink":"http://www.baidu.com",

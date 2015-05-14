@@ -1,6 +1,6 @@
 require.config({
   paths: {
-    "react": "/static/lib/react/react.min",
+    "react": "/static/lib/react/react",
     "JSXTransformer": "/static/lib/react/JSXTransformer",
     "jquery": "/static/lib/jquery/jquery-1.11.2.min",
     "routie": "/static/lib/routie/routie.min",
@@ -17,6 +17,6 @@ require.config({
   }
 });
 
-require(['app', 'jquery', 'react', 'routie'], function(App) {
-  console.log('main.js inited');
+require(['jquery', 'app', 'react', 'routie'], function(App) {
+  //console.log('main.js inited');
 });

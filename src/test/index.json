@@ -3,6 +3,7 @@
     "total":"100",
     "result":[
         {
+            "id": "1",
             "userHead":"http://img1.imgtn.bdimg.com/it/u=1450185990,1189087573&fm=21&gp=0.jpg",
             "favour":"1000",
             "userLink":"http://www.baidu.com",
@@ -13,6 +14,7 @@
             "articleTitle":"我的文章1"
         },
         {
+            "id": "2",
             "userHead":"http://img1.imgtn.bdimg.com/it/u=1450185990,1189087573&fm=21&gp=0.jpg",
             "favour":"100",
             "userLink":"http://www.baidu.com",
@@ -23,6 +25,7 @@
             "articleTitle":"关于react的使用教程"
         },
         {
+            "id": "3",
             "userHead":"http://img1.imgtn.bdimg.com/it/u=1450185990,1189087573&fm=21&gp=0.jpg",
             "favour":"200",
             "userLink":"http://www.baidu.com",

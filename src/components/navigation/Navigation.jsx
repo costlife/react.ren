@@ -5,16 +5,16 @@ define(function(require){
             return {
                 navs:[{
                     name:'首页',
-                    href:'#/'
+                    href:'#'
                 },{
                     name:'推荐',
-                    href:'#/suggest'
+                    href:'#suggest'
                 },{
                     name:'话题',
-                    href:'#/topic'
+                    href:'#topic'
                 },{
                     name:'消息',
-                    href:'#/msg'
+                    href:'#msg'
                 }]
             }
         },
@@ -22,7 +22,7 @@ define(function(require){
             return (
                 <div className="nav">
                     {this.state.navs.map(function(nav) {
-                        return <a className="nav-item" {...nav}>{nav.name}</a>;
+                        return <a className="nav-item" key={nav.name} {...nav}>{nav.name}</a>;
                     })}
                 </div>
             );

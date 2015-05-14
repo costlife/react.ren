@@ -1,10 +1,35 @@
 @import "/static/css/mixins";
-
+#login{
+    display: none;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.background {
+    .fixed;
+    background-color: #000;
+    opacity: 0.5;
+}
 .login-form {
+    .fixed;
     background-color: #4190ff;
     display: inline-block;
     padding: 20px;
-
+    width: 255px;
+    height: 200px;
+    z-index: 1000;
+    .close-btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 14px;
+        line-height: 14px;
+    }
     span {
         width: 255px;
         height: 50px;
