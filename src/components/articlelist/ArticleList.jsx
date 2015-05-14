@@ -8,9 +8,10 @@ define(function(require){
         },
         render: function() {
             return (
-                <div>
+                <div className='article-list'>
                     {this.props.data.map(function(result) {
-                        return <ArticleItem key={result.id} {...result}/>;
+                        //should add key={result.id} as an attr in ArticleItem
+                        return <ArticleItem  {...result}/>;
                     })}
                 </div>
             );

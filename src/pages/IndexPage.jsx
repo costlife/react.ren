@@ -30,12 +30,17 @@ define(function(require){
             this.fetch(this.state.params);
         },
         bindEvents: function(){
+            var me = this;
             $(window).bind("scroll",function() {
                 // 判断窗口的滚动条是否接近页面底部，这里的20可以自定义
-                if ($(document).scrollTop() + $(window).height() > $(document).height() - 20) {
-                      console.log(123);
+                me.didScroll = true;
+            });
+            setInterval(function(){
+                var needFetch = $(document).scrollTop() + $(window).height() > $(document).height() - 50;
+                if (me.didScroll && needFetch){
+                    me.fetch();
                 }
-            })
+            },1000);
         },
         fetch: function(params) {
             var me = this;
@@ -56,6 +61,7 @@ define(function(require){
                         </Card>
                         <Card style={card1Style} name="最新动态">
                             <ArticleList data={this.state.listData}/>
+                            <div className="loading">正在加载中...</div>
                         </Card>
                     </Content>
                 </div>
