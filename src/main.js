@@ -2,8 +2,8 @@ require.config({
   paths: {
     "react": "/static/lib/react/react",
     "JSXTransformer": "/static/lib/react/JSXTransformer",
-    "jquery": "/static/lib/jquery/jquery-1.11.2.min",
-    "routie": "/static/lib/routie/routie.min",
+    "jquery": "/static/lib/jquery/dist/jquery",
+    "routie": "/static/lib/routie/dist/routie",
   },
 
   shim: {
